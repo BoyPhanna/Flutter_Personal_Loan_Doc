@@ -220,11 +220,9 @@ class _NewClienPageState extends State<NewClienPage> {
                           ));
                       QuickAlert.show(
                         context: context,
-                        type: QuickAlertType.confirm,
+                        type: QuickAlertType.success,
                         text: 'ទិន្នន័យត្រូវបានរក្សារទុក',
-                        confirmBtnText: '',
-                        cancelBtnText: 'យល់ព្រម',
-                        confirmBtnColor: Colors.white,
+                        confirmBtnText: 'យល់ព្រម',
                         cancelBtnTextStyle:
                             TextStyle(color: Color.fromARGB(255, 8, 195, 21)),
                       );

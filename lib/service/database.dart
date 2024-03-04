@@ -77,7 +77,7 @@ CREATE TABLE cliens (
 
   Future<int> update({required Clien clien}) async {
     final db = await instance.database;
-    print("Update ID: " + clien.id!.toString());
+    print("Update ID: " + clien.job.toString());
     return db.update(
       clienTable,
       clien.toJson(),

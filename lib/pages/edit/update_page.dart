@@ -47,6 +47,7 @@ class _UpdateClienPageState extends State<UpdateClienPage> {
     curentOption = clien.gender;
     clienNameController.text = clien.name;
     dobController.text = clien.dob;
+    jobController.text = clien.job;
     nationallityController.text = clien.nationality;
     homeNumberController.text = clien.address.split('-')[0];
     vilageController.text = clien.address.split('-')[1];
@@ -63,7 +64,7 @@ class _UpdateClienPageState extends State<UpdateClienPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ថែមអតិថិជនថ្មី"),
+        title: Text("អតិថនចាស់ស្នើរថ្មី"),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
@@ -232,11 +233,9 @@ class _UpdateClienPageState extends State<UpdateClienPage> {
                       );
                       QuickAlert.show(
                         context: context,
-                        type: QuickAlertType.confirm,
+                        type: QuickAlertType.success,
                         text: 'ទិន្នន័យត្រូវបានរក្សារទុក',
-                        confirmBtnText: '',
-                        cancelBtnText: 'យល់ព្រម',
-                        confirmBtnColor: Colors.white,
+                        confirmBtnText: 'យល់ព្រម',
                         cancelBtnTextStyle:
                             TextStyle(color: Color.fromARGB(255, 8, 195, 21)),
                       );
